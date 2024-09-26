@@ -1,0 +1,292 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background: url(IMG-20240921-WA0011.jpg);
+  background-repeat:round;
+  background-position: center;
+  background-size: contain;
+  background-color: rgba(7, 31, 48, 0.773);
+  background-blend-mode: multiply;
+  color: white;
+ }
+ header {
+  background-color: transparent;
+  top: 0;
+  margin-top: -20px;
+  padding: 20px;
+  font-size:35px;
+  color: rgb(21, 251, 4);
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ }
+
+ .logo {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(4, 253, 4);
+ }
+
+ .redB {
+  font-weight: 200;
+  color: rgb(253, 2, 2);
+ }
+ #co-name {
+  margin-left: 0;
+  cursor: pointer;
+ }
+
+ #fname {
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+ }
+
+ #fname:hover {
+  color: rgb(255, 17, 0);
+ }
+
+ nav{
+  background-color: transparent;
+  top: 0;
+  right: 10px;
+  padding: 20px;
+  border-bottom: 1px solid black;
+  position: absolute;
+  font-size: 20px;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+}
+
+nav li {
+  margin-right: 22px;
+}
+
+nav a {
+  color:  rgb(29, 253, 5);
+  text-decoration: none;
+  transition:  color 0.2s ease;
+}
+
+
+nav a:hover{
+  color: rgb(249, 136, 6);
+}
+
+nav a:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color:rgb(252, 96, 5) ;
+  transition: width 0.7s ease-in-out;
+}
+
+nav a:hover:before{
+  width:  9%;
+}
+ .btn-send {
+  color: rgb(20, 230, 35);
+  background-color: rgba(11, 10, 10, 0.654);
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+ }
+
+
+ .btn-send:hover {
+  color: rgb(4, 239, 251);
+ }
+
+ .fas {
+  color: rgb(252, 96, 5);
+ }
+
+ img {
+  height: 300px;
+  width: 300px;
+  border-radius:900px;
+  margin-bottom: 20px;
+ }
+  
+ .cs {
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  gap: 0;
+ }
+
+ .f-bg {
+  background: url(depositphotos_324849002-stock-photo-small-tree-growing-with-sunshine.jpg);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-color: rgba(28, 15, 15, 0.702);
+  background-blend-mode: multiply;
+  color: inherit;
+ }
+
+  a {
+  color:rgb(21, 251, 4);
+ }
+ .social-media li a {
+  color:rgb(4, 239, 251);
+ }
+
+ .social-media {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-top: 55px;
+ }
+
+.item {
+  align-items: center;
+  justify-content: center;
+}
+
+/* .form-group {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 10px;
+ }*/
+
+ .contact-right {
+  flex-basis: 60%;
+ }
+ .contact-right form {
+  width: 100%;
+ }
+
+ form input, form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+ }
+
+ .btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #1aff00;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.5s;
+ }
+
+ .btn.btn2 {
+  display: inline-block;
+  background-color: #181f17;
+ }
+ .btn:hover {
+  background: #51ff0093;
+ }
+
+ form .btn2 {
+  padding: 14px 60px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+ }
+
+ ::placeholder {
+  color: white;
+ }
+
+ .cright {
+  float: right;
+ }
+ 
+ @media only screen and (max-width : 600px) {
+  nav  .bi-icon {
+    display: block;
+    font-size: 25px;
+   }
+
+   nav ul {
+    background: #050e02be;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+   }
+
+   nav ul li {
+    display: block;
+    margin: 25px;
+   }
+
+   nav ul .bi-icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+   }
+
+  .contact-right {
+    flex-basis: 100%;
+   }
+   .cright {
+    font-size: 14px;
+   }
+ } 
+
+ #msg {
+  color: #61b752;
+  margin-top: -20px;
+  display: block;
+ }
+
+ .row div img {
+  margin-right: 50px;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .social-media li a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #f89a02;
+  display: inline-block;
+  transition: transform 0.5s;
+ }
+
+ .social-media a:hover {
+  color: #04fc42c5;
+  transform: translateY(-5px);
+ } 
