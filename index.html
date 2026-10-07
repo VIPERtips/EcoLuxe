@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoLuxe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -12,10 +15,9 @@
     <link rel="shortcut icon" href="EcoLuxe_black.png">
 </head>
 <body>
-    <div id="header">
-        <h1 class="logo" id="co-name"><span id="fname">Eco</span>Luxe</h1>
-        <div class="container">
-          <nav>
+    <header id="header">
+        <h1 class="logo" id="co-name"><a href="index.html"><span id="fname">Eco</span>Luxe</a></h1>
+        <nav>
             <ul id="sideMenu">
               <li><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
               <li><a href="product.html"><i class="fa fa-shopping-cart"></i> Products</a></li>
@@ -24,99 +26,125 @@
               <i class="bi bi-x-circle bi-icon" onclick="closeMenu()"></i>
             </ul>
             <i class="bi bi-list bi-icon" onclick="openMenu()"></i>
-          </nav>
-        </div>
-      </div>
+        </nav>
+    </header>
 
     <section class="hero">
-        <div class="container">
-            <h1>Welcome to EcoLuxe</h1>
-            <p>Join our mission to make the world a greener place through sustainable innovations.</p>
+        <div class="hero-copy">
+            <p class="eyebrow rise">Sustainable living</p>
+            <h1 class="rise rise-2">Welcome to EcoLuxe</h1>
+            <p class="lede rise rise-3">Join our mission to make the world a greener place through sustainable innovations.</p>
+            <a class="text-link rise rise-4" href="product.html">View products</a>
         </div>
+        <figure class="hero-figure rise rise-3">
+            <img src="reuser-cup-designboom-01.jpg" alt="Reusable cup">
+        </figure>
     </section>
 
     <section class="features" id="features">
         <div class="container">
-            <h2>Our Features</h2>
-            <div class="row cs">
-                <div class="col-md-4">
-                    <h3> <i class="fas fa-leaf"></i> Eco-friendly products</h3>
-                    <img src="reuser-cup-designboom-01.jpg" alt="Product 1">
+            <div class="section-head reveal">
+                <p class="eyebrow">What we stand for</p>
+                <h2>Our Features</h2>
+            </div>
+            <article class="feature reveal">
+                <figure>
+                    <img src="bamboo-toothbrush-500x500.png" alt="Product 1">
+                </figure>
+                <div>
+                    <h3><i class="fas fa-leaf"></i> Eco-friendly products</h3>
                     <p>We offer a range of eco-friendly products to help you reduce your carbon footprint</p>
                 </div>
-                <div class="col-md-4">
-                    <h3><i class="fas fa-recycle"></i> Recycling programs</h3>
+            </article>
+            <article class="feature reveal">
+                <figure>
                     <img src="Jute_Reusable.jpg" alt="Product 2">
+                </figure>
+                <div>
+                    <h3><i class="fas fa-recycle"></i> Recycling programs</h3>
                     <p>We partner with local recycling programs to help reduce waste</p>
                 </div>
-                <div class="col-md-4">
-                    <h3> <i class="fas fa-sun"></i> Renewable energy</h3>
+            </article>
+            <article class="feature reveal">
+                <figure>
                     <img src="AdobeStock_166916488-scaled-e1683923540796.jpeg.webp" alt="Product 3">
+                </figure>
+                <div>
+                    <h3><i class="fas fa-sun"></i> Renewable energy</h3>
                     <p>We invest in renewable energy sources to power our operations</p>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
     <section class="testimonials">
         <div class="container">
-            <h2>What our customers say</h2>
-            <div class="row cs">
-                <div class="col-md-4">
-                    <img src="customer_experience_blog-e1544196336279.jpg" alt="Customer 1">
+            <div class="section-head reveal">
+                <p class="eyebrow">Customers</p>
+                <h2>What our customers say</h2>
+            </div>
+            <div class="quotes">
+                <blockquote class="quote reveal">
+                    <figure class="portrait">
+                        <img src="customer_experience_blog-e1544196336279.jpg" alt="Customer 1">
+                    </figure>
                     <p>"EcoLuxe has helped me reduce my carbon footprint significantly!"</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="make customers happy over the phone.png" alt="Customer 2">
+                </blockquote>
+                <blockquote class="quote reveal">
+                    <figure class="portrait">
+                        <img src="make customers happy over the phone.png" alt="Customer 2">
+                    </figure>
                     <p>"I love the eco-friendly products offered by EcoLuxe!"</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="Customer-Experience-Metrics-Blog_1600x900-1024x576.png" alt="Customer 3">
+                </blockquote>
+                <blockquote class="quote reveal">
+                    <figure class="portrait">
+                        <img src="Customer-Experience-Metrics-Blog_1600x900-1024x576.png" alt="Customer 3">
+                    </figure>
                     <p>"EcoLuxe's recycling programs are amazing!"</p>
-                </div>
+                </blockquote>
             </div>
         </div>
     </section>
 
-    <section class="about">
-        <div class="container">
-            <div id="about">
-                <h2>About EcoLuxe</h2>
-                <p>EcoLuxe is a social enterprise dedicated to the promotion of sustainable living and reducing environmental impact. <br> Our mission is to make eco-friendly products and practices accessible to everyone.</p>
-            </div>
+    <section class="about" id="about">
+        <div class="container reveal">
+            <p class="eyebrow">About</p>
+            <h2>About EcoLuxe</h2>
+            <p>EcoLuxe is a social enterprise dedicated to the promotion of sustainable living and reducing environmental impact. Our mission is to make eco-friendly products and practices accessible to everyone.</p>
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <div id="contact">
+            <div class="contact-intro reveal">
+                <p class="eyebrow">Contact</p>
                 <h2>Get in Touch</h2>
                 <p>Have questions or want to collaborate? We'd love to hear from you!</p>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <label for="name"><i class="fas fa-user-edit"></i> Name</label>
-                        <input type="text" name="Name" placeholder="Enter Name" required>
-                        <label for="email"><i class="fas fa-envelope"></i> Email:</label>
-                        <input type="email" name="Email" placeholder="Enter Email" required>
-                        <label for="message"><i class="fas fa-comment"></i> Message:</label>
-                        <textarea name="Message" rows="6" placeholder="Enter Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+            </div>
+            <div class="contact-right reveal">
+                <form name="submit-to-google-sheet">
+                    <label for="name"><i class="fas fa-user-edit"></i> Name</label>
+                    <input id="name" type="text" name="Name" placeholder="Enter Name" required>
+                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <input id="email" type="email" name="Email" placeholder="Enter Email" required>
+                    <label for="message"><i class="fas fa-comment"></i> Message:</label>
+                    <textarea id="message" name="Message" rows="6" placeholder="Enter Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
+        <div class="container footer-bar">
             <ul class="social-media">
-                <li><a href="https://www.facebook.com/tadiwa.tips.37"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.x.com/young_tips"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/young_tips_blessed"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://wa.me/263787778679"><i class="fab fa-whatsapp"></i></a></li>
-                <li><p class="cright">&copy; <span class="curryear">2023</span> EcoLuxe</p></li>
+                <li><a href="https://www.facebook.com/tadiwa.tips.37" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.x.com/young_tips" aria-label="X"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/young_tips_blessed" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://wa.me/263787778679" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
             </ul>
+            <p class="cright">&copy; <span class="curryear">2023</span> EcoLuxe</p>
         </div>
     </footer>
 
